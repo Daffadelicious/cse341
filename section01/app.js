@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
     if (url === '/create-user'){
         const body = [];
         req.on('data', (chunk) =>{
-            // console.log(chunk);
+            // console.log(chunk); test
             body.push(chunk);
         });
         req.on('end', () => {
